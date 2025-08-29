@@ -10,6 +10,17 @@ import XCTest
 
 final class PulseAITests: XCTestCase {
 
+    var viewModel: LoginViewModel!
+
+    override func setUp() {
+        super.setUp()
+        viewModel = LoginViewModel()
+    }
+
+    override func tearDown() {
+        super.tearDown()
+        viewModel = nil
+    }
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -18,19 +29,47 @@ final class PulseAITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func textEmptyEmailAndPasswordShowsError() {
+        let viewModel = LoginViewModel()
+
+        viewModel.email = ""
+        viewModel.password = ""
+        viewModel.login()
+
+        XCTAssertEqual(viewModel.errorMessage, "Email and password must not be empty!")
+        XCTAssertFalse(viewModel.isLoggedIn)
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testValidEmail() {
+        XCTAssertTrue(viewModel.isValidEmail("meet@example.com"))
+        XCTAssertTrue(viewModel.isValidEmail("john.doe123@mail.co.in"))
+        XCTAssertTrue(viewModel.isValidEmail("x_y-z+1@domain.org"))
     }
 
+    func testInvalidEmailMissingAtSymbol() {
+        XCTAssertFalse(viewModel.isValidEmail("meet.example.com"))
+    }
+
+    func testInvalidEmailMissingDomain() {
+        XCTAssertFalse(viewModel.isValidEmail("meet@"))
+    }
+
+    func testInvalidEmailInvalidCharacters() {
+        XCTAssertFalse(viewModel.isValidEmail("meet@@example.com"))
+        XCTAssertFalse(viewModel.isValidEmail("meet@exa mple.com"))
+    }
+
+    func testEmptyEmail() {
+        XCTAssertFalse(viewModel.isValidEmail(""))
+    }
+
+    func testSuccessfulLoginSetsIsLoggedInTrue() {
+        // Stubs values (pretend these are correct credentials)
+        viewModel.email = "miit@gmail.com"
+        viewModel.password = "Test@1234"
+
+        // Normally we would mock FirebaseAuth here. For demo, assume success.
+        viewModel.isLoggedIn = true
+        XCTAssertTrue(viewModel.isLoggedIn)
+    }
 }

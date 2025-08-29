@@ -6,3 +6,16 @@ repos:
       - id: end-of-file-fixer
       - id: check-yaml
       - id: check-added-large-files
+  - repo: local
+    hooks:
+      - id: ios-unit-tests
+        name: Run Unit tests
+        entry: xcodebuild test -scheme PulseAI -only-testing:PulseAITests -destination "platform=iOS Simulator,name=iPhone 14,OS=16.1"
+        language: system
+        pass_filenames: false
+
+      - id: ios-ui-tests
+        name: Run UI tests
+        entry: xcodebuild test -scheme PulseAI -only-testing:PulseAIUITests -destination "platform=iOS Simulator,name=iPhone 14,OS=16.1"
+        language: system
+        pass_filenames: false
