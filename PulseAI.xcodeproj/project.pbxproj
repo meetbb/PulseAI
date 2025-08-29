@@ -14,6 +14,15 @@
 		67BE4F792E619F230012AD3E /* PulseAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BE4F782E619F230012AD3E /* PulseAITests.swift */; };
 		67BE4F832E619F230012AD3E /* PulseAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BE4F822E619F230012AD3E /* PulseAIUITests.swift */; };
 		67BE4F852E619F230012AD3E /* PulseAIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BE4F842E619F230012AD3E /* PulseAIUITestsLaunchTests.swift */; };
+		67ED588B2E61BDEC003393EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67ED588A2E61BDEC003393EB /* GoogleService-Info.plist */; };
+		67ED58962E61C60F003393EB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ED58952E61C60E003393EB /* LoginViewModel.swift */; };
+		67ED589B2E61C7ED003393EB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ED589A2E61C7ED003393EB /* LoginView.swift */; };
+		67ED589E2E61CF3D003393EB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 67ED589D2E61CF3D003393EB /* FirebaseAnalytics */; };
+		67ED58A02E61CF3D003393EB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 67ED589F2E61CF3D003393EB /* FirebaseAuth */; };
+		67ED58A32E61D071003393EB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 67ED58A22E61D071003393EB /* FirebaseAnalytics */; };
+		67ED58A52E61D071003393EB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 67ED58A42E61D071003393EB /* FirebaseAuth */; };
+		67ED58A72E61D087003393EB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 67ED58A62E61D087003393EB /* FirebaseAnalytics */; };
+		67ED58A92E61D087003393EB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 67ED58A82E61D087003393EB /* FirebaseAuth */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,9 @@
 		67BE4F7E2E619F230012AD3E /* PulseAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PulseAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67BE4F822E619F230012AD3E /* PulseAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAIUITests.swift; sourceTree = "<group>"; };
 		67BE4F842E619F230012AD3E /* PulseAIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		67ED588A2E61BDEC003393EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		67ED58952E61C60E003393EB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		67ED589A2E61C7ED003393EB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67ED589E2E61CF3D003393EB /* FirebaseAnalytics in Frameworks */,
+				67ED58A02E61CF3D003393EB /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67ED58A32E61D071003393EB /* FirebaseAnalytics in Frameworks */,
+				67ED58A52E61D071003393EB /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67ED58A72E61D087003393EB /* FirebaseAnalytics in Frameworks */,
+				67ED58A92E61D087003393EB /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +96,7 @@
 				67BE4F772E619F230012AD3E /* PulseAITests */,
 				67BE4F812E619F230012AD3E /* PulseAIUITests */,
 				67BE4F652E619F200012AD3E /* Products */,
+				67ED58A12E61D071003393EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,8 +113,9 @@
 		67BE4F662E619F200012AD3E /* PulseAI */ = {
 			isa = PBXGroup;
 			children = (
+				67ED58922E61C5C3003393EB /* Features */,
+				67ED588A2E61BDEC003393EB /* GoogleService-Info.plist */,
 				67BE4F952E619FE90012AD3E /* Support */,
-				67BE4F942E619FE10012AD3E /* UI */,
 				67BE4F932E619FD40012AD3E /* Presentation */,
 				67BE4F922E619FCD0012AD3E /* Data */,
 				67BE4F912E619FC20012AD3E /* Domain */,
@@ -153,18 +173,51 @@
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		67BE4F942E619FE10012AD3E /* UI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
 		67BE4F952E619FE90012AD3E /* Support */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		67ED58922E61C5C3003393EB /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				67ED58932E61C5CF003393EB /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		67ED58932E61C5CF003393EB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				67ED58972E61C783003393EB /* View */,
+				67ED58942E61C5DA003393EB /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		67ED58942E61C5DA003393EB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				67ED58952E61C60E003393EB /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		67ED58972E61C783003393EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67ED589A2E61C7ED003393EB /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67ED58A12E61D071003393EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +236,10 @@
 			dependencies = (
 			);
 			name = PulseAI;
+			packageProductDependencies = (
+				67ED589D2E61CF3D003393EB /* FirebaseAnalytics */,
+				67ED589F2E61CF3D003393EB /* FirebaseAuth */,
+			);
 			productName = PulseAI;
 			productReference = 67BE4F642E619F200012AD3E /* PulseAI.app */;
 			productType = "com.apple.product-type.application";
@@ -201,6 +258,10 @@
 				67BE4F762E619F230012AD3E /* PBXTargetDependency */,
 			);
 			name = PulseAITests;
+			packageProductDependencies = (
+				67ED58A22E61D071003393EB /* FirebaseAnalytics */,
+				67ED58A42E61D071003393EB /* FirebaseAuth */,
+			);
 			productName = PulseAITests;
 			productReference = 67BE4F742E619F230012AD3E /* PulseAITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -219,6 +280,10 @@
 				67BE4F802E619F230012AD3E /* PBXTargetDependency */,
 			);
 			name = PulseAIUITests;
+			packageProductDependencies = (
+				67ED58A62E61D087003393EB /* FirebaseAnalytics */,
+				67ED58A82E61D087003393EB /* FirebaseAuth */,
+			);
 			productName = PulseAIUITests;
 			productReference = 67BE4F7E2E619F230012AD3E /* PulseAIUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -255,6 +320,9 @@
 				Base,
 			);
 			mainGroup = 67BE4F5B2E619F200012AD3E;
+			packageReferences = (
+				67ED589C2E61CF3D003393EB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 67BE4F652E619F200012AD3E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -273,6 +341,7 @@
 			files = (
 				67BE4F6F2E619F220012AD3E /* Preview Assets.xcassets in Resources */,
 				67BE4F6C2E619F220012AD3E /* Assets.xcassets in Resources */,
+				67ED588B2E61BDEC003393EB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +368,8 @@
 			files = (
 				67BE4F6A2E619F200012AD3E /* ContentView.swift in Sources */,
 				67BE4F682E619F200012AD3E /* PulseAIApp.swift in Sources */,
+				67ED589B2E61C7ED003393EB /* LoginView.swift in Sources */,
+				67ED58962E61C60F003393EB /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +694,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		67ED589C2E61CF3D003393EB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		67ED589D2E61CF3D003393EB /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67ED589C2E61CF3D003393EB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		67ED589F2E61CF3D003393EB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67ED589C2E61CF3D003393EB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		67ED58A22E61D071003393EB /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67ED589C2E61CF3D003393EB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		67ED58A42E61D071003393EB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67ED589C2E61CF3D003393EB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		67ED58A62E61D087003393EB /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67ED589C2E61CF3D003393EB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		67ED58A82E61D087003393EB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67ED589C2E61CF3D003393EB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 67BE4F5C2E619F200012AD3E /* Project object */;
 }
