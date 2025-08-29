@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		67BE4F682E619F200012AD3E /* PulseAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BE4F672E619F200012AD3E /* PulseAIApp.swift */; };
+		67BE4F6A2E619F200012AD3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BE4F692E619F200012AD3E /* ContentView.swift */; };
+		67BE4F6C2E619F220012AD3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67BE4F6B2E619F220012AD3E /* Assets.xcassets */; };
+		67BE4F6F2E619F220012AD3E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67BE4F6E2E619F220012AD3E /* Preview Assets.xcassets */; };
+		67BE4F792E619F230012AD3E /* PulseAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BE4F782E619F230012AD3E /* PulseAITests.swift */; };
+		67BE4F832E619F230012AD3E /* PulseAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BE4F822E619F230012AD3E /* PulseAIUITests.swift */; };
+		67BE4F852E619F230012AD3E /* PulseAIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BE4F842E619F230012AD3E /* PulseAIUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		67BE4F752E619F230012AD3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67BE4F5C2E619F200012AD3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67BE4F632E619F200012AD3E;
+			remoteInfo = PulseAI;
+		};
+		67BE4F7F2E619F230012AD3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67BE4F5C2E619F200012AD3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67BE4F632E619F200012AD3E;
+			remoteInfo = PulseAI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		67BE4F642E619F200012AD3E /* PulseAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulseAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67BE4F672E619F200012AD3E /* PulseAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAIApp.swift; sourceTree = "<group>"; };
+		67BE4F692E619F200012AD3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		67BE4F6B2E619F220012AD3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67BE4F6E2E619F220012AD3E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		67BE4F742E619F230012AD3E /* PulseAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PulseAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67BE4F782E619F230012AD3E /* PulseAITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAITests.swift; sourceTree = "<group>"; };
+		67BE4F7E2E619F230012AD3E /* PulseAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PulseAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67BE4F822E619F230012AD3E /* PulseAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAIUITests.swift; sourceTree = "<group>"; };
+		67BE4F842E619F230012AD3E /* PulseAIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67BE4F612E619F200012AD3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67BE4F712E619F230012AD3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67BE4F7B2E619F230012AD3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67BE4F5B2E619F200012AD3E = {
+			isa = PBXGroup;
+			children = (
+				67BE4F662E619F200012AD3E /* PulseAI */,
+				67BE4F772E619F230012AD3E /* PulseAITests */,
+				67BE4F812E619F230012AD3E /* PulseAIUITests */,
+				67BE4F652E619F200012AD3E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		67BE4F652E619F200012AD3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67BE4F642E619F200012AD3E /* PulseAI.app */,
+				67BE4F742E619F230012AD3E /* PulseAITests.xctest */,
+				67BE4F7E2E619F230012AD3E /* PulseAIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67BE4F662E619F200012AD3E /* PulseAI */ = {
+			isa = PBXGroup;
+			children = (
+				67BE4F952E619FE90012AD3E /* Support */,
+				67BE4F942E619FE10012AD3E /* UI */,
+				67BE4F932E619FD40012AD3E /* Presentation */,
+				67BE4F922E619FCD0012AD3E /* Data */,
+				67BE4F912E619FC20012AD3E /* Domain */,
+				67BE4F672E619F200012AD3E /* PulseAIApp.swift */,
+				67BE4F692E619F200012AD3E /* ContentView.swift */,
+				67BE4F6B2E619F220012AD3E /* Assets.xcassets */,
+				67BE4F6D2E619F220012AD3E /* Preview Content */,
+			);
+			path = PulseAI;
+			sourceTree = "<group>";
+		};
+		67BE4F6D2E619F220012AD3E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				67BE4F6E2E619F220012AD3E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		67BE4F772E619F230012AD3E /* PulseAITests */ = {
+			isa = PBXGroup;
+			children = (
+				67BE4F782E619F230012AD3E /* PulseAITests.swift */,
+			);
+			path = PulseAITests;
+			sourceTree = "<group>";
+		};
+		67BE4F812E619F230012AD3E /* PulseAIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				67BE4F822E619F230012AD3E /* PulseAIUITests.swift */,
+				67BE4F842E619F230012AD3E /* PulseAIUITestsLaunchTests.swift */,
+			);
+			path = PulseAIUITests;
+			sourceTree = "<group>";
+		};
+		67BE4F912E619FC20012AD3E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		67BE4F922E619FCD0012AD3E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		67BE4F932E619FD40012AD3E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		67BE4F942E619FE10012AD3E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		67BE4F952E619FE90012AD3E /* Support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67BE4F632E619F200012AD3E /* PulseAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67BE4F882E619F230012AD3E /* Build configuration list for PBXNativeTarget "PulseAI" */;
+			buildPhases = (
+				67BE4F602E619F200012AD3E /* Sources */,
+				67BE4F612E619F200012AD3E /* Frameworks */,
+				67BE4F622E619F200012AD3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PulseAI;
+			productName = PulseAI;
+			productReference = 67BE4F642E619F200012AD3E /* PulseAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		67BE4F732E619F230012AD3E /* PulseAITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67BE4F8B2E619F230012AD3E /* Build configuration list for PBXNativeTarget "PulseAITests" */;
+			buildPhases = (
+				67BE4F702E619F230012AD3E /* Sources */,
+				67BE4F712E619F230012AD3E /* Frameworks */,
+				67BE4F722E619F230012AD3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67BE4F762E619F230012AD3E /* PBXTargetDependency */,
+			);
+			name = PulseAITests;
+			productName = PulseAITests;
+			productReference = 67BE4F742E619F230012AD3E /* PulseAITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		67BE4F7D2E619F230012AD3E /* PulseAIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67BE4F8E2E619F230012AD3E /* Build configuration list for PBXNativeTarget "PulseAIUITests" */;
+			buildPhases = (
+				67BE4F7A2E619F230012AD3E /* Sources */,
+				67BE4F7B2E619F230012AD3E /* Frameworks */,
+				67BE4F7C2E619F230012AD3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67BE4F802E619F230012AD3E /* PBXTargetDependency */,
+			);
+			name = PulseAIUITests;
+			productName = PulseAIUITests;
+			productReference = 67BE4F7E2E619F230012AD3E /* PulseAIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67BE4F5C2E619F200012AD3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					67BE4F632E619F200012AD3E = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					67BE4F732E619F230012AD3E = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 67BE4F632E619F200012AD3E;
+					};
+					67BE4F7D2E619F230012AD3E = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 67BE4F632E619F200012AD3E;
+					};
+				};
+			};
+			buildConfigurationList = 67BE4F5F2E619F200012AD3E /* Build configuration list for PBXProject "PulseAI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 67BE4F5B2E619F200012AD3E;
+			productRefGroup = 67BE4F652E619F200012AD3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67BE4F632E619F200012AD3E /* PulseAI */,
+				67BE4F732E619F230012AD3E /* PulseAITests */,
+				67BE4F7D2E619F230012AD3E /* PulseAIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67BE4F622E619F200012AD3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67BE4F6F2E619F220012AD3E /* Preview Assets.xcassets in Resources */,
+				67BE4F6C2E619F220012AD3E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67BE4F722E619F230012AD3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67BE4F7C2E619F230012AD3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67BE4F602E619F200012AD3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67BE4F6A2E619F200012AD3E /* ContentView.swift in Sources */,
+				67BE4F682E619F200012AD3E /* PulseAIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67BE4F702E619F230012AD3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67BE4F792E619F230012AD3E /* PulseAITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67BE4F7A2E619F230012AD3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67BE4F852E619F230012AD3E /* PulseAIUITestsLaunchTests.swift in Sources */,
+				67BE4F832E619F230012AD3E /* PulseAIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67BE4F762E619F230012AD3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67BE4F632E619F200012AD3E /* PulseAI */;
+			targetProxy = 67BE4F752E619F230012AD3E /* PBXContainerItemProxy */;
+		};
+		67BE4F802E619F230012AD3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67BE4F632E619F200012AD3E /* PulseAI */;
+			targetProxy = 67BE4F7F2E619F230012AD3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		67BE4F862E619F230012AD3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		67BE4F872E619F230012AD3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67BE4F892E619F230012AD3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PulseAI/Preview Content\"";
+				DEVELOPMENT_TEAM = 2GR8F8KEA7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mr.PulseAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67BE4F8A2E619F230012AD3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PulseAI/Preview Content\"";
+				DEVELOPMENT_TEAM = 2GR8F8KEA7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mr.PulseAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		67BE4F8C2E619F230012AD3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GR8F8KEA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mr.PulseAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PulseAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PulseAI";
+			};
+			name = Debug;
+		};
+		67BE4F8D2E619F230012AD3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GR8F8KEA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mr.PulseAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PulseAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PulseAI";
+			};
+			name = Release;
+		};
+		67BE4F8F2E619F230012AD3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GR8F8KEA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mr.PulseAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PulseAI;
+			};
+			name = Debug;
+		};
+		67BE4F902E619F230012AD3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GR8F8KEA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mr.PulseAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PulseAI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67BE4F5F2E619F200012AD3E /* Build configuration list for PBXProject "PulseAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67BE4F862E619F230012AD3E /* Debug */,
+				67BE4F872E619F230012AD3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67BE4F882E619F230012AD3E /* Build configuration list for PBXNativeTarget "PulseAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67BE4F892E619F230012AD3E /* Debug */,
+				67BE4F8A2E619F230012AD3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67BE4F8B2E619F230012AD3E /* Build configuration list for PBXNativeTarget "PulseAITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67BE4F8C2E619F230012AD3E /* Debug */,
+				67BE4F8D2E619F230012AD3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67BE4F8E2E619F230012AD3E /* Build configuration list for PBXNativeTarget "PulseAIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67BE4F8F2E619F230012AD3E /* Debug */,
+				67BE4F902E619F230012AD3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 67BE4F5C2E619F200012AD3E /* Project object */;
+}
