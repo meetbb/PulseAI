@@ -23,6 +23,9 @@
 		67ED58A52E61D071003393EB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 67ED58A42E61D071003393EB /* FirebaseAuth */; };
 		67ED58A72E61D087003393EB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 67ED58A62E61D087003393EB /* FirebaseAnalytics */; };
 		67ED58A92E61D087003393EB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 67ED58A82E61D087003393EB /* FirebaseAuth */; };
+		67F059882E62D75F00BF12DB /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F059872E62D75F00BF12DB /* KeyboardResponder.swift */; };
+		67F059892E62D75F00BF12DB /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F059872E62D75F00BF12DB /* KeyboardResponder.swift */; };
+		67F0598A2E62D75F00BF12DB /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F059872E62D75F00BF12DB /* KeyboardResponder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,7 @@
 		67ED588A2E61BDEC003393EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		67ED58952E61C60E003393EB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		67ED589A2E61C7ED003393EB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		67F059872E62D75F00BF12DB /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,7 @@
 		67BE4F932E619FD40012AD3E /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				67F059862E62D72700BF12DB /* Utils */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -218,6 +223,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67F059862E62D72700BF12DB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				67F059872E62D75F00BF12DB /* KeyboardResponder.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +382,7 @@
 				67BE4F6A2E619F200012AD3E /* ContentView.swift in Sources */,
 				67BE4F682E619F200012AD3E /* PulseAIApp.swift in Sources */,
 				67ED589B2E61C7ED003393EB /* LoginView.swift in Sources */,
+				67F059882E62D75F00BF12DB /* KeyboardResponder.swift in Sources */,
 				67ED58962E61C60F003393EB /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67BE4F792E619F230012AD3E /* PulseAITests.swift in Sources */,
+				67F059892E62D75F00BF12DB /* KeyboardResponder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +402,7 @@
 			files = (
 				67BE4F852E619F230012AD3E /* PulseAIUITestsLaunchTests.swift in Sources */,
 				67BE4F832E619F230012AD3E /* PulseAIUITests.swift in Sources */,
+				67F0598A2E62D75F00BF12DB /* KeyboardResponder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,11 +547,12 @@
 				DEVELOPMENT_TEAM = 2GR8F8KEA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PulseAI;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -543,6 +560,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mr.PulseAI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -560,11 +580,12 @@
 				DEVELOPMENT_TEAM = 2GR8F8KEA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PulseAI;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -572,6 +593,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mr.PulseAI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

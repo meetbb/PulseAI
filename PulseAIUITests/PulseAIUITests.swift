@@ -49,31 +49,33 @@ final class PulseAIUITests: XCTestCase {
         let emailField = app.textFields["Email"]
         XCTAssertTrue(emailField.waitForExistence(timeout: 5))
         emailField.tap()
+        XCTAssertTrue(app.keyboards.element.exists, "Keyboard should be visible.")
         emailField.typeText("miit@gmail.com")
 
         let passwordField = app.secureTextFields["Password"]
         XCTAssertTrue(passwordField.waitForExistence(timeout: 5))
         passwordField.tap()
+        XCTAssertTrue(app.keyboards.element.exists, "Keyboard should be visible")
         passwordField.typeText("Test@1234")
 
         app.keyboards.buttons["return"].tap()
-
+        XCTAssertFalse(app.keyboards.element.exists, "Keyboard should be gone.")
+        print(app.debugDescription)
         let loginButton = app.buttons["Login"]
         XCTAssertTrue(loginButton.waitForExistence(timeout: 5))
         loginButton.tap()
-
         let homeScreen = app.staticTexts["Home Screen"]
         XCTAssertTrue(homeScreen.waitForExistence(timeout: 10))
     }
 
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
-    }
+//    func testLaunchPerformance() throws {
+//        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
+//            // This measures how long it takes to launch your application.
+//            measure(metrics: [XCTApplicationLaunchMetric()]) {
+//                XCUIApplication().launch()
+//            }
+//        }
+//    }
 }
 
 extension XCUIElement {
